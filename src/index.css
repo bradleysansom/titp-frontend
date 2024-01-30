@@ -1,0 +1,203 @@
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+
+body {
+  background: #000;
+  margin: 0;
+  font-family: "Obviously";
+  color: #eee;
+}
+
+header {
+  background: #222;
+}
+
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.pages {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+
+div.students {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+.studentPortrait {
+  display: block;
+  background-color: #333;
+  color: #333;
+  width: 350px;
+  height: 350px;
+  aspect-ratio: 1;
+  border-radius: 200px;
+  filter: grayscale(1);
+  object-fit: cover;
+}
+
+article.student {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  border: 1px solid #222;
+  padding: 30px;
+
+}
+
+.studentBlurbContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.studentName {
+  font-size: 2rem;
+}
+
+.studentBioHeading,
+.studentContactHeading {
+  font-family: 'obviously-narrow'
+}
+
+.studentBio {
+  font-weight: 400;
+}
+
+ul.studentContactList {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block: 0;
+  padding: 0;
+}
+
+.studentContactList li {
+  display: block;
+  list-style: none;
+
+  border: 2px solid #fff;
+
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: .3s;
+}
+
+.studentContactList li:hover {
+  color: #111;
+  background-color: #fff;
+
+}
+
+.studentContactList li a {
+  padding: 20px;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+
+}
+
+.studentContactList li:hover a {
+  color: #111;
+}
+
+.studentSentenceContainer {
+  max-width: 300px;
+  padding: 25px;
+}
+
+.studentSentenceIntro {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.studentSentenceText {
+  margin-inline-start: 30px;
+}
+
+.studentPageLink {
+  display: block;
+  border: 2px solid #fff;
+  font-size: 1rem;
+  padding: 10px;
+  transition: .3s;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+}
+
+.studentPageLink:hover {
+  color: #111;
+  background-color: #fff;
+}
+
+
+
+/* new student form */
+label,
+input {
+  display: block;
+}
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #444;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #000;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div.error {
+  padding: 10px;
+  background: #330000;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+input.error {
+  border: 1px solid var(--error);
+}
